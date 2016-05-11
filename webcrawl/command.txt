@@ -1,0 +1,6 @@
+# use scrapy
+scrapy crawl keywordSpider -a keyword="keywords" -o url.json
+jq '.[].url' test.json | tr -d '"'
+
+# use selenium
+python searchengine.py 'keywords'

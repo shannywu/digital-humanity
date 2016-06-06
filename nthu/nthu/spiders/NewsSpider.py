@@ -6,6 +6,7 @@ from nthu.items import NewsItem
 # http://stackoverflow.com/questions/1466000/
 # urls = map(str.strip(), open'../news_url.txt'))
 
+
 class NewsSpider(scrapy.Spider):
     name = 'newsspider'
     start_urls = ['http://www.nthu.edu.tw/newsphoto/']
